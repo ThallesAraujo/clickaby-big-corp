@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="pedidos/pedidos.css">
+<div class="main-container">
+    <h1 class="title">Pedidos</h1>
+    <div class="pedidos-container" ng-controller="pedidosCtrl" ng-init="getPedidos()">
+        <div class="card" style="cursor: pointer;" ng-repeat="pedido in pedidos" ng-click="orderDetails(pedido.id)">
+            <div>
+                <p class="main-subtitle">Pedido #{{pedido.id}}</p>
+                <p>Cliente: {{pedido.idCliente}}</p>
+                <p>{{getOrderDescription(pedido.produtos)}}</p>
+            </div>
+        </div>
+    </div>
+</div>

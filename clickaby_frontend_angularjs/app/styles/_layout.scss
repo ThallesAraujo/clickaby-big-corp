@@ -1,0 +1,32 @@
+.main-container{
+    padding: 1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.v-stack{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.input-group{
+    padding: 1em;
+    input{
+        width: 100%;
+    }
+
+    .cta-button{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.input-group:first-child{
+    padding: 1em;
+    padding-left: 0;
+}

@@ -1,0 +1,190 @@
+@import 'fonts';
+@import 'colors';
+
+
+@mixin subtitle{
+    color: darken($color: $text-color, $amount: 10);
+    font-size: 20px;
+}
+
+button{
+    color: $cta-color;
+    font-family: $primary-font;
+    padding: 20px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: linear-gradient($start-button-gradient, $cta-color);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.cta-button{
+    color: $cta-color;
+    font-family: $primary-font;
+    font-size: 16px;
+    padding: 20px 14px;
+    border: 2px solid $cta-color;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 10px;
+    max-width: 200px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer
+}
+
+
+.cta-button:hover{
+    background-color: lighten($color: $cta-color, $amount: 10);
+    border-color: transparent;
+    color: white;
+}
+
+button:hover{
+    box-shadow: 0 14px 28px rgba($cta-color,0.32);
+}
+
+button:focus{
+    outline: none;
+}
+
+.title{
+    font-family: $primary-font-light;
+    color: $title-color;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 0;
+}
+
+p{
+    font-family: $secondary-font;
+    font-size: 20px;
+    color: $text-color;
+    line-height: 30px;
+}
+
+input, select{
+    padding: 20px 14px;
+    border: 1px solid $textfield-border;
+    border-radius: 10px;
+    outline: none;
+    font-family: $primary-font;
+    font-size: 14px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    padding: 20px 14px;
+}
+
+input:focus, select:focus{
+    border: 2px solid $textfield-border-focused;
+}
+
+.card{
+    padding: 0.5em;
+    margin: 1em;
+    margin-right: 2em;
+    margin-left: 0;
+    display: flex;
+    width: 350px;
+    align-content: center;
+    align-items: center;
+    
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 10px;
+    background-color: rgba(whitesmoke, 0.5);
+    
+    .text-container{
+        padding: 0.5em;
+        word-wrap: break-word;
+        flex-wrap: wrap;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    h3{
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        color: $text-color;
+    }
+
+    img{
+        width: 70%;
+        height: 70%;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    .card-actions{
+        display: flex;
+
+        button{
+            width: 45px;
+            height: 45px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 10px;
+
+            i{
+                color: white;
+            }
+        }
+
+    }
+
+}
+
+.card:hover{
+    box-shadow: 0 14px 28px rgba(black,0.10);
+}
+
+.small-text{
+    font-size: 14px
+}
+
+.subtitle{
+    font-family: $primary-font;
+    @include subtitle()
+}
+
+.subtitle-bold{
+    font-family: $primary-font-bold;
+    @include subtitle()
+}
+
+.subtitle-light{
+    font-family: $primary-font-light;
+    @include subtitle()
+}
+
+.main-subtitle{
+    color: $cta-color;
+    font-family: $primary-font;
+    font-size: 20px!important;
+}
+
+h2{
+    font-family: $primary-font-bold;
+    color: darken($color: $text-color, $amount: 30);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}

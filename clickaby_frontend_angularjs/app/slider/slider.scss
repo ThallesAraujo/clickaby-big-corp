@@ -1,0 +1,38 @@
+@import '../styles/components';
+
+.outer-container{
+   padding: 1em;
+}
+
+.slider-container{
+    height: 100%;
+}
+
+
+.slide{
+    background-color: white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    img{
+        align-self: center;
+    }
+
+    .container-caption{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 30%;
+        align-self: center;
+    }
+}
+
+.card{
+    img{
+        width: 50%;
+        height: 50%;
+    }
+}

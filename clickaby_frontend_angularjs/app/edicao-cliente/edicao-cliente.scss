@@ -1,0 +1,10 @@
+@import '../styles/components';
+
+.container-modal{
+    max-width: 500px;
+    max-height: 500px;
+    position: absolute;
+    left: calc(100vw - 30%);
+    top: 20%;
+    background-color: white;
+}

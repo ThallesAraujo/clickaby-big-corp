@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="oferta-home-office/oferta-home-office.css">
+<div class="main-container">
+   
+    <div class="banner">
+        <img src="https://www.lenovo.com/medias/lenovo-laptop-yoga-slim-7-14-amd-subseries-hero.png?context=bWFzdGVyfHJvb3R8MzAwNjk2fGltYWdlL3BuZ3xoN2QvaGVjLzEwNzE5MTk4MzQ3Mjk0LnBuZ3xjYjUwNjk0ZmQ4ZDVlYjliODk3MzBiZGZlYmEzMWRhZDM3ZjM3NTIwNjExYzBmMTA5MDU4YzYyNWZiM2Y4OGNm" alt="notebook">
+        <div style="padding: 2em">
+            <h2>Aproveite!</h2>
+            <p>Descontos imperdíveis em toda linha de notebooks para turbinar seu home-office!</p>
+        </div>
+    </div>
+
+    <div class="container" ng-controller="ofertaHomeOfficeCtrl">
+        <div class="card" ng-repeat="produto in produtos">
+            <img src={{produto.imagem}} alt="img-produto">
+                <div style="line-height: 0;">
+                    <p class="main-subtitle" style="padding-bottom: 0;">{{produto.nome}}</p>
+                    <p class="subtitle-bold">R$ {{produto.valor}}</p>
+                </div>
+               
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="clientes/clientes.css">
+<div class="main-container" ng-controller="clientesCtrl">
+    <div class="side-by-side" style="padding-bottom: 30px!important">
+        <h1 class="title">Clientes</h1>
+        <button ng-click="addClient()">Adicionar cliente</button>
+    </div>
+    <div class="container" ng-init="getClientes()">
+        <div class="card" ng-repeat="cliente in clientes">
+            <img src="../assets/icons/client_avatar.svg" alt="Imagem do Cliente">
+            <div>
+                <h3>{{cliente.nome}}</h3>
+                <p>Cliente desde {{cliente.dataCadastro}}</p>
+                <div class="card-actions">
+                    <button ng-click="editClient(cliente.id)" title="Editar Cliente">
+                        <i class="gg-pen"></i>
+                    </button>
+                    <button ng-click="goToOrdersFromClient(cliente.id)" title="Pedidos do Cliente">
+                        <i class="gg-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

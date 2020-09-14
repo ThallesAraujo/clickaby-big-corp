@@ -1,0 +1,35 @@
+@import '../styles/components';
+@import '../styles/layout';
+@import '../styles/fonts';
+
+div{
+    margin: 0 !important;
+}
+
+.top-container{
+    padding: 10px 0;
+    max-height: 30px;
+}
+
+.text{
+    font-family: $primary-font;
+    font-size: 12px;
+    align-self: center;
+    height: 100%;
+}
+
+.card{
+    margin: 1em!important;
+
+    img{
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+.cta-button{
+    height: 60px;
+    display: flex; 
+    align-items: center; 
+    font-size: 12px;
+}

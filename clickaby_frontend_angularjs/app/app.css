@@ -1,0 +1,76 @@
+@import url("https://css.gg/css");
+.main-container {
+  padding: 1em;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.v-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.input-group {
+  padding: 1em;
+}
+
+.input-group input {
+  width: 100%;
+}
+
+.input-group .cta-button {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.input-group:first-child {
+  padding: 1em;
+  padding-left: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("assets/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("assets/fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url("assets/fonts/Montserrat/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: Oxygen;
+  src: url("assets/fonts/Oxygen/Oxygen-Regular.ttf");
+}
+
+@font-face {
+  font-family: Oxygen-Light;
+  src: url("assets/fonts/Oxygen/Oxygen-Light.ttf");
+}
+/*# sourceMappingURL=app.css.map */

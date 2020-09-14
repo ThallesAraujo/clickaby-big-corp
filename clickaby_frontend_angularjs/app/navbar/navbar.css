@@ -1,0 +1,48 @@
+.side-by-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-by-side .menu-nav {
+  font-family: Oxygen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-by-side .menu-nav .menu-link {
+  color: #707070;
+  padding: 1em;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.side-by-side .menu-nav .menu-link::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF293A;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.side-by-side .menu-nav .menu-link:hover {
+  color: #FF293A;
+}
+
+.side-by-side .menu-nav .menu-link:hover::before {
+  width: 100%;
+}
+/*# sourceMappingURL=navbar.css.map */

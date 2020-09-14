@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="slider/slider.css">
+<div class="outer-container">
+    <div class="container-slider">
+        <div class="slide">
+            <img src="assets/dell-xps.png" width="50%" height="50%" style="padding: 5%" alt="ofertas wfh">
+            <div class="container-caption">
+                <h1 class="title">#WorkFromHome</h1>
+                <p>Trabalhando de casa? Somente hoje, temos uma promoção especial para você!</p>
+                <button class="cta-button" ng-click="specialPromo()">Ver Oferta</button>
+            </div>
+        </div>
+    </div>
+    <p class="subcaption" style="text-transform: uppercase;">Ofertas especiais</p>
+
+    <div class="container" style="justify-content: center" ng-controller="sliderCtrl" ng-init="getProdutos()">
+        <div class="card" ng-repeat="produto in produtos">
+            <img src={{produto.imagem}} alt="img-produto">
+                <div style="line-height: 0;">
+                    <p class="main-subtitle" style="padding-bottom: 0;">{{produto.nome}}</p>
+                    <p class="subtitle-bold">R$ {{produto.valor}}</p>
+                </div>
+               
+        </div>
+    </div>
+</div>
+
+
+

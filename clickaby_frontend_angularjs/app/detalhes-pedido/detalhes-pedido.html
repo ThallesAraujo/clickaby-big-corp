@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="detalhes-pedido/detalhes-pedido.css">
+<div class="main-container" ng-controller="detalhesPedidoCtrl" ng-init="getPedido()">
+    <div class="container">
+        <div>
+            <h1 class="title" style="padding-bottom: 0;">Detalhes do pedido</h1>
+            <p>Código #{{pedido.id}}</p>
+        </div>
+    </div>
+
+    <p class="subcaption">Produtos</p>
+
+    <div>
+        <div class="side-by-side" ng-repeat="produto in pedido.produtos">
+            <div class="container">
+                <img style="align-self: center;" src={{produto.imagem}} alt="img-produto" width="10%" height="10%">
+                <div style="line-height: 0;">
+                    <p class="main-subtitle" style="padding-bottom: 0;">{{produto.nome}}</p>
+                    <p>R$ {{produto.valor}}</p>
+                </div>
+            </div>
+            <p class="subtitle-bold" style="text-align: right;">Quantidade: {{produto.quantidade}}</p>
+        </div>
+    </div>
+</div>

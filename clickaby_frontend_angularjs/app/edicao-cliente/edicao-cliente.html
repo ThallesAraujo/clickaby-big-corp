@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="edicao-cliente/edicao-cliente.css">
+<div class="main-container" ng-controller="edicaoClienteCtrl" ng-init="getCliente()">
+    <div class="side-by-side">
+        <h1 class="title">Editar cliente</h1>
+        <button ng-click="complete()">Salvar</button>
+    </div>
+    <div class="input-group" style="padding-left: 0;">
+        <p>Nome</p>
+        <input type="text" name="nome" id="nome" ng-model="cliente.nome">
+    </div>
+</div>

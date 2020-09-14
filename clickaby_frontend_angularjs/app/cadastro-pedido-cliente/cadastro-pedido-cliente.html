@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="cadastro-pedido-cliente/cadastro-pedido-cliente.css">
+<div class="main-container" ng-controller="cadastroPedidoClienteCtrl" ng-init="getData()">
+    <div class="side-by-side">
+        <div style="margin: 0;">
+            <p class="title" style="margin-bottom: 0;">Novo Pedido</p>
+            <p class="subtitle-light">Cliente: (#{{cliente.id}}) - {{cliente.nome}}</p>
+        </div>
+        <button style="height: 10%;" ng-click="completion()">Salvar pedido</button>
+    </div>
+    <div class="v-stack" class="input-group">
+           
+        <h2>Produtos</h2>
+
+        <div class="container" style="align-items: flex-end;">
+           <div class="input-group">
+            <p class="subtitle">Produto</p>
+            <select ng-init="getProdutos()" name="produto" ng-model="currentProduct" ng-change="setProduct()">
+                <option ng-repeat="produto in produtos" value={{produto}} >{{produto.nome}}</option>
+            </select>
+           </div>
+           <div class="input-group">
+               <p>Quantidade</p>
+               <input type="number" name="quantidade" ng-model="currentAmount" id="quantidade" style="width: 80%;">
+           </div>
+           <div class="input-group">
+            <button ng-click="addItem()" class="cta-button">
+                    <i class="gg-add" style="margin-right: 10px;"></i>
+                    Adicionar item
+            </button>
+           </div>
+        </div>
+        
+        <h2>Itens Adicionados</h2>
+        <div class="container">
+            
+            <div class="card" ng-repeat="item in addedItems">
+                <img src={{item.imagem}} alt="img-produto">
+                <div style="line-height: 0;">
+                    <p class="main-subtitle" style="padding-bottom: 0;">{{item.nome}}</p>
+                    <p>R$ {{item.valor}}</p>
+                    <p class="subtitle-bold">Quantidade: {{item.quantidade}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

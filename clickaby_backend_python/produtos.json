@@ -1,0 +1,34 @@
+[
+        
+        {
+                "nome": "iPhone 11",
+                "valor": 4500,
+                "imagem": "https://29028l.ha.azioncdn.net/img/2019/09/produto/181294/19/large/smartphone-apple-iphone-11-preto.jpg"
+        },
+        {
+                "nome": "LG Velvet",
+                "valor": 3400,
+                "imagem": "https://i0.wp.com/mikqs.com/wp-content/uploads/2020/06/LG-Velvet.jpg?fit=500%2C500&ssl=1"
+        },
+        {
+                "nome": "Smartphone LG K10",
+                "valor": 500,
+                "imagem": "https://www.lg.com/br/images/celulares/MD05845191/gallery/lg_k10_novo_desktop2.jpg"
+        },
+        {
+                "nome": "Notebook Dell XPS 13",
+                "valor": 6400,
+                "imagem": "https://imagens.canaltech.com.br/produto/1578685050-7479-principal-m.png"
+        },
+        {
+                "nome": "Notebook Dell Vostro",
+                "valor": 4750,
+                "imagem": "https://29028l.ha.azioncdn.net/img/2020/06/produto/204972/19/large/notebook-dell-vostro-3480-intel-core-i5-ram-4gb-hd-1tb-windows-preto.jpg"
+        },
+        {
+                "nome": "Notebook Lenovo Thinkpad",
+                "valor": 6350,
+                "imagem": "https://images2.kabum.com.br/produtos/fotos/105022/notebook-lenovo-thinkpad-e490-intel-core-i5-8265u-8gb-500gb-windows-10-pro-14-20n9000gbr_1570627217_g.jpg"
+        }
+        
+]
